@@ -1,6 +1,6 @@
 type GreetProps = { name: string; messageCount: number; isLoggedIn: boolean };
 
-export function Greet(props: GreetProps) {
+export default function Greet(props: GreetProps) {
   return (
     <>
       <h2>
