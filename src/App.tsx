@@ -23,14 +23,14 @@ function App() {
   return (
     <div className="App">
       <main>
-        {/* <Greet name="Craig" messageCount={10} isLoggedIn={false} />
-        <Person name={personName} />
+        <Greet name="Craig" isLoggedIn={false} />
+        {/* <Person name={personName} />
         <PersonList names={personNamesList} />
         <Status status="loading" />
-        <Heading>Placeholder text</Heading> */}
+        <Heading>Placeholder text</Heading> 
         <Oscar>
           <Heading>Oscar goes to Leonard Dicaprio!</Heading>
-        </Oscar>
+        </Oscar>*/}
       </main>
     </div>
   );
