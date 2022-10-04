@@ -1,10 +1,9 @@
-type PersonProps = {
-  name: { first: string; last: string };
-};
-export default function (props: PersonProps) {
+import { PersonProps } from "./Person.type";
+
+export default function ({ name }: PersonProps) {
   return (
     <div>
-      {props.name.first} {props.name.last}
+      {name.first} {name.last}
     </div>
   );
 }

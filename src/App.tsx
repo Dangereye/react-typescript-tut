@@ -27,20 +27,20 @@ function App() {
     <div className="App">
       <main>
         {/* <Greet name="Craig" isLoggedIn={true} /> */}
-        {/* <Person name={personName} />
+        {/* <Person name={personName} />*/}
         <PersonList names={personNamesList} />
-        <Status status="loading" />
+        {/* <Status status="loading" />
         <Heading>Placeholder text</Heading> 
         <Oscar>
           <Heading>Oscar goes to Leonard Dicaprio!</Heading>
-        </Oscar>*/}
+        </Oscar> */}
         {/* <Button
           handleClick={(event, id) => {
             console.log("Button Clicked", event, id);
           }}
         />
         <Input value="" handleChange={(event) => console.log(event)} /> */}
-        <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+        {/* <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
       </main>
     </div>
   );
