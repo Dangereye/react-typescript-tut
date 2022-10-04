@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from "./components/Button";
 
 // Components
 import Greet from "./components/Greet";
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Greet name="Craig" isLoggedIn={false} />
+        {/* <Greet name="Craig" isLoggedIn={true} /> */}
         {/* <Person name={personName} />
         <PersonList names={personNamesList} />
         <Status status="loading" />
@@ -31,6 +32,11 @@ function App() {
         <Oscar>
           <Heading>Oscar goes to Leonard Dicaprio!</Heading>
         </Oscar>*/}
+        <Button
+          handleClick={(event, id) => {
+            console.log("Button Clicked", event, id);
+          }}
+        />
       </main>
     </div>
   );
