@@ -14,7 +14,7 @@ type UserContextProviderProps = {
   children: React.ReactElement;
 };
 
-export const UserContext = createContext<UserContextType | null>(null);
+export const UserContext = createContext({} as UserContextType);
 
 export default function UserContextProvider({
   children,
