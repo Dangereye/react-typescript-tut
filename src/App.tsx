@@ -20,6 +20,7 @@ import Button from "./components/Button";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import User3 from "./components/context/User3";
+import { Counter2 } from "./components/class/Counter2";
 
 function App() {
   const personName = {
@@ -58,9 +59,10 @@ function App() {
         {/* <ThemeContextProvider>
           <Box />
         </ThemeContextProvider> */}
-        <UserContextProvider>
+        {/* <UserContextProvider>
           <User3 />
-        </UserContextProvider>
+        </UserContextProvider> */}
+        <Counter2 message="The count value is " />
       </main>
     </div>
   );
