@@ -23,6 +23,7 @@ import User3 from "./components/context/User3";
 import { Counter2 } from "./components/class/Counter2";
 import AuthPrivate from "./components/auth/AuthPrivate";
 import AuthProfile from "./components/auth/AuthProfile";
+import GenList from "./components/generics/GenList";
 
 function App() {
   const personName = {
@@ -65,7 +66,12 @@ function App() {
           <User3 />
         </UserContextProvider> */}
         {/* <Counter2 message="The count value is " /> */}
-        <AuthPrivate isLoggedIn={true} component={AuthProfile} />
+        {/* <AuthPrivate isLoggedIn={true} component={AuthProfile} /> */}
+        <GenList
+          items={["batman", "superman", "Wonder woman"]}
+          onClick={(item) => console.log(item)}
+        />
+        <GenList items={[1, 2, 3]} onClick={(item) => console.log(item)} />
       </main>
     </div>
   );
