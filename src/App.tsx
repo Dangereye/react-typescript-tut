@@ -24,6 +24,7 @@ import { Counter2 } from "./components/class/Counter2";
 import AuthPrivate from "./components/auth/AuthPrivate";
 import AuthProfile from "./components/auth/AuthProfile";
 import GenList from "./components/generics/GenList";
+import RandomNumber from "./components/restriction/RandomNumber";
 
 function App() {
   const personName = {
@@ -67,11 +68,12 @@ function App() {
         </UserContextProvider> */}
         {/* <Counter2 message="The count value is " /> */}
         {/* <AuthPrivate isLoggedIn={true} component={AuthProfile} /> */}
-        <GenList
+        {/* <GenList
           items={["batman", "superman", "Wonder woman"]}
           onClick={(item) => console.log(item)}
         />
-        <GenList items={[1, 2, 3]} onClick={(item) => console.log(item)} />
+        <GenList items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+        <RandomNumber value={50} isPositive />
       </main>
     </div>
   );
