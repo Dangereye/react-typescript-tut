@@ -27,6 +27,7 @@ import GenList from "./components/generics/GenList";
 import RandomNumber from "./components/restriction/RandomNumber";
 import Toast from "./components/templateliterals/Toast";
 import WrapButton from "./components/html/WrapButton";
+import Text from "./components/polymorphic/Text";
 
 function App() {
   const personName = {
@@ -77,7 +78,16 @@ function App() {
         <GenList items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
         {/* <RandomNumber value={50} isPositive /> */}
         {/* <Toast position="center" /> */}
-        <WrapButton variant="primary">Primary button</WrapButton>
+        {/* <WrapButton variant="primary">Primary button</WrapButton> */}
+        <Text as="h1" size="lg">
+          Heading
+        </Text>
+        <Text as="p" size="md">
+          Paragraph
+        </Text>
+        <Text as="label" htmlFor="someId" size="sm" color="secondary">
+          Label
+        </Text>
       </main>
     </div>
   );
