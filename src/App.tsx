@@ -21,6 +21,8 @@ import Container from "./components/Container";
 import Box from "./components/context/Box";
 import User3 from "./components/context/User3";
 import { Counter2 } from "./components/class/Counter2";
+import AuthPrivate from "./components/auth/AuthPrivate";
+import AuthProfile from "./components/auth/AuthProfile";
 
 function App() {
   const personName = {
@@ -62,7 +64,8 @@ function App() {
         {/* <UserContextProvider>
           <User3 />
         </UserContextProvider> */}
-        <Counter2 message="The count value is " />
+        {/* <Counter2 message="The count value is " /> */}
+        <AuthPrivate isLoggedIn={true} component={AuthProfile} />
       </main>
     </div>
   );
