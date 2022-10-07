@@ -26,6 +26,7 @@ import AuthProfile from "./components/auth/AuthProfile";
 import GenList from "./components/generics/GenList";
 import RandomNumber from "./components/restriction/RandomNumber";
 import Toast from "./components/templateliterals/Toast";
+import WrapButton from "./components/html/WrapButton";
 
 function App() {
   const personName = {
@@ -75,7 +76,8 @@ function App() {
         />
         <GenList items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
         {/* <RandomNumber value={50} isPositive /> */}
-        <Toast position="center" />
+        {/* <Toast position="center" /> */}
+        <WrapButton variant="primary">Primary button</WrapButton>
       </main>
     </div>
   );
